@@ -10,7 +10,6 @@ export interface ICheckbox {
 }
 
 export const ExcerciseCheckbox: React.FC<ICheckbox> = ({checked, label, handleClick, name}) => {
-    console.log(checked)
     return (
         <FormControlLabel
             control={<Checkbox checked={checked} onClick={handleClick} />}

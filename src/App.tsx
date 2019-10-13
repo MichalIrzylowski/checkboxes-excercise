@@ -2,7 +2,6 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 import {Main} from './main';
 
 const App: React.FC = () => {
@@ -15,14 +14,12 @@ const App: React.FC = () => {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Paper style={{marginTop: '100px'}}>
-        <Toolbar>
-          <Typography variant='h3'>
-            Checkboxes
-          </Typography>
-        </Toolbar>
-        <Main />
-      </Paper>
+      <Toolbar>
+        <Typography variant='h3'>
+          Checkboxes
+        </Typography>
+      </Toolbar>
+      <Main />
     </>
   );
 }
