@@ -1,8 +1,6 @@
-{
-    "data": [
-        {"marketingConsent": "Zgoda marketingowa"},
-        {"generalConsent": "Zgoda generalna"},
-        {"diffrentConsent": "Inna zgoda"},
-        {"someConsent": "Jakaś zgoda"}
-    ]
-}
+[
+    {"consentType": "Zgoda marketingowa", "name": "marketing"},
+    {"consentType": "Zgoda generalna", "name": "general"},
+    {"consentType": "Inna zgoda", "name": "diffrent"},
+    {"consentType": "Jakaś zgoda", "name": "some"}
+]
