@@ -1,4 +1,5 @@
 import React from 'react'
+import FormGroup from '@material-ui/core/FormGroup';
 import {ExcerciseCheckbox, ICheckbox} from '../checkbox';
 
 interface ICheckboxWrapper {
@@ -25,9 +26,9 @@ export const CheckboxWrapper: React.FC<ICheckboxWrapper> = ({children, allCheckb
     }
 
     return (
-        <div>
-            {children.length > 1 && <ExcerciseCheckbox label={allCheckboxLabel} checked={areAllSelected} handleClick={handleClick} name={name} />}
-            {children}
-        </div>
+    <FormGroup>
+        {children.length > 1 && <ExcerciseCheckbox label={allCheckboxLabel} checked={areAllSelected} handleClick={handleClick} name={name} />}
+        {children}
+    </FormGroup>
     )
 }
