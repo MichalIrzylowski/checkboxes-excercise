@@ -1,0 +1,6 @@
+[
+    {"consentType": "Zgoda marketingowa", "name": "marketing"},
+    {"consentType": "Zgoda generalna", "name": "general"},
+    {"consentType": "Inna zgoda", "name": "diffrent"},
+    {"consentType": "Jakaś zgoda", "name": "some"}
+]

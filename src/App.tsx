@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import {Main} from './main';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppBar>
+        <Toolbar>
+          <Typography variant='h6'>
+            Checkboxes
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Toolbar>
+        <Typography variant='h3'>
+          Checkboxes
+        </Typography>
+      </Toolbar>
+      <Main />
+    </>
   );
 }
 
